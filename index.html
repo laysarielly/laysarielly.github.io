@@ -2,59 +2,50 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/tabletop1.3.4.js"></script>
-    <script type="text/javascript" src="js/sheetsee.js"></script>
-    <script type="text/javascript" src="js/socialbits.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
-    <title>Hello World</title>
+    <link rel="icon" href="img/icon.jpg" type="image/x-icon">
+    <title>Laysa Arielly 🌼</title>
   </head>
   <body>
+    
     <!-- HTML -->
-    <div class="container">
-      <article id="instagram"><span class="load flash animated">LOADING...</span></article>
+    <div class="wrapper">
+      <div class="container">
+        <article id="header">
+          <div class="avatar"><img src="img/avatar.png" width="150"></div>
+        </article>
 
-      <div class="bio">
-        <h1>Jessica Lord</h1>
-        <p>I am an open source designer and javascript developer living in Oakland, Ca. I work at GitHub, and it's hella rad. This is test text for this page. So, cool. Coffee, bikes and molé.</p>
-        <ul class="inline-list">
-          <li><a href="">Twitter</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Instagram</a></li>
-          <li><a href="">Dribble</a></li>
-        </ul>
+        <div class="bio">
+          
+          <h1>Laysa Arielly</h1>
+
+          <p>Hi! I'm glad you're here.</br>Sit down and take a cup of coffee.</p>
+          <p>☕</p>
+          <p>This page is still under construction, like my works, my life and my dreams ... Just like yours :)</p>
+          <p>~ Computer Technician in constant learning ~</p>
+          <p>Brazil - Rio de Janeiro - Resende</p>
+          <p>Feel free to contact me!</p>
+
+          <!-- Futuras mudanças
+          // <p>Oi! Que prazer ter você aqui. </br> Sente-se e pegue uma xícara de café.</p>
+          // <p>☕</p>
+          // <p>Esta página ainda está em construção, assim como meus trabalhos, minha vida e meus sonhos... E os seus também :) </p>
+          // <p>~ Técnica em Informática aprendendo constantemente ~</p>
+          // <p>Brasil - Rio de Janeiro - Resende</p>
+          // <p>Fique a vontade para conferir os links abaixo </br> e entrar em contato comigo.</p>
+          -->
+
+          <ul class="inline-list">
+            <li><a href="mailto:laysa998@gmail.com" target="_top">Email</a></li>
+            <li><a href="https://github.com/laysarielly" target="_blank" rel="noopener" rel="noreferrer">GitHub</a></li>
+            <li><a href="https://www.facebook.com/laysaarielly" target="_blank" rel="noopener" rel="noreferrer">Facebook</a></li>          
+            <li><a href="https://www.instagram.com/laysarielly/" target="_blank" rel="noopener" rel="noreferrer">Instagram</a></li>
+          </ul>
+
+        </div>
       </div>
-
-      <article id="tweet"><span class="load flash animated">LOADING...</span></article>
-
     </div>
-
-    <!-- Templates -->
-    <script id="instagram" type="text/html">
-      {{#rows}}
-        <div class="one-gram"><img src="{{instasource}}" width="150"></div>
-
-      {{/rows}}
-    </script>
-
-    <script id="tweet" type="text/html">
-      {{#rows}}
-        <p><span class="quote">&ldquo;</span> {{{tweet}}} <span class="quote"> &rdquo;</span></p>
-
-      {{/rows}}
-    </script>
-
-    <!-- JavaScript -->
-      <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded', function() {
-          var URL  = '0Ao5u1U6KYND7dG9CRWdjeVB6dGYyN3c3RktocExUV1E' // insta
-          var URL2 = '0Ao5u1U6KYND7dDd2RTBwajZrT3pEc2p2LVVWc0o0WVE' // tweet
-
-          Tabletop.init({ key: URL,  callback: buildInsta,  simpleSheet: true })
-          Tabletop.init({ key: URL2, callback: buildTweet,  simpleSheet: true })
-        })
-      </script>
-
+    
   </body>
 </html>
